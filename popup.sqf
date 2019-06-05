@@ -14,12 +14,13 @@
 // - numRandomTargets (integer) is how many targets to pick from list to pop (to not select targets randomly, enter 0)
 // - offset (integer) is how far off the numRandomTargets you want the TRUE number of random targets to be (to not use offset, enter 0)
 // - display (boolean) is whether or not you want a hint displayed telling you how many targets have been flipped
-// above are not for whis modified version, new syntax:
+//
+// *****Above are not for this modified version, new syntax:
 //[[target_1,target_2,target_3],0,1,true] ExecVM  "popup.sqf"
 //[[[target_1,target_2,target_3],0,1,true],"popup.sqf"] remoteExec ["execVM"];
 //this addAction ["popup",{[[target_1,target_2,target_3],0,1,true] ExecVM  "popup.sqf";}]
-//this addAction ["popup",{[[[target_1,target_2,target_3],0,1,true],"popup.sqf"] remoteExec ["execVM"];}]//can be used on dedicated server on a "Laptop"
-//
+//this addAction ["popup",{[[[target_1,target_2,target_3],0,1,true],"popup.sqf"] remoteExec ["execVM"];}]
+//can be used on dedicated server on a "Laptop"
 //
 //
 
@@ -33,8 +34,6 @@
 // First, we pick a random number between the offset value given and zero. Then we pick which side of the zero it will be on, positive or
 // negative, with a coin flip (0 or 1). We then add that value to the random number of targets to be popped.
 
-// ***** ADD THIS CODE TO THE INIT OF EVERY POP-UP TARGET YOU WANT TO BE DOWN *****
-// this animate["terc",1]
 
 // ***** RESET YOUR TARGETS *****
 // these codes are for 1.92 env to prevent target popup, add to init for each target

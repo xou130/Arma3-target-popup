@@ -21,3 +21,6 @@ _this spawn {
   waituntil {(_this select 0 select 0) animationPhase "terc" <1};   
  (_this select 0 select 0) animate ["terc",1];   
 }}];   
+
+#中文
+#适用于战队训练场的靶场不弹起和统一复位脚本

@@ -1,7 +1,7 @@
 # Arma3-target-popup  
 This is a customized version on FoxRazgriz/SSgt Schirf 's popup.sqf.  
 Suitble for clan killing house usage  
-tested on a clain server  
+tested on a clan server  
 # Syntax for using  
 1. each target has a name like target_1  
 //those code for executing reset action  
@@ -24,7 +24,7 @@ _this spawn {
 }}];   
   
 # 适用于战队训练场的靶场不弹起和统一复位脚本  
-  
+（服务器化改造的单机脚本）  
 0. 安装脚本至你的任务  
 1. 添加如下代码至复位用物品（任一行）  
 其中target_x为一个所有需要复位的靶子的变量列表  
